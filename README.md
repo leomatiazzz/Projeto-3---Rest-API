@@ -13,16 +13,36 @@ Este projeto consiste em uma API REST desenvolvida com Django e Django Ninja par
 ## 📂 Estrutura do Projeto
 
 ```
-📁 core/
- ├── 📁 treino/   # Aplicação principal
- │   ├── models.py   # Modelos de dados
- │   ├── api.py      # Endpoints da API
- │   ├── schemas.py  # Schemas Pydantic para validação
- │   ├── views.py    # Lógica de visualização
- │   ├── urls.py     # Rotas da aplicação
- ├── settings.py  # Configurações do Django
- ├── urls.py      # Rotas principais
- ├── manage.py    # Comando de gerenciamento do Django
+projeto3/
+│── core/
+│   │── __pycache__/
+│   │── __init__.py
+│   │── api.py
+│   │── asgi.py
+│   │── settings.py
+│   │── urls.py
+│   │── wsgi.py
+│
+│── treino/
+│   │── __pycache__/
+│   │── migrations/
+│   │   │── __pycache__/
+│   │   │── __init__.py
+│   │   │── 0001_initial.py
+│   │   │── 0002_aulasconcluidas.py
+│   │── __init__.py
+│   │── admin.py
+│   │── api.py
+│   │── apps.py
+│   │── graduacao.py
+│   │── models.py
+│   │── schemas.py
+│   │── tests.py
+│   │── views.py
+│
+│── venv/
+│── db.sqlite3
+│── manage.py
 ```
 
 ## 🚀 Como Executar o Projeto
