@@ -46,7 +46,7 @@ def progresso_aluno(request, email_aluno: str):
         "aulas_necessarias_para_proxima_faixa": aulas_faltantes
     }
 
-@treino_router.post('/aula_realizada', response={200: str})
+@treino_router.post('/aula_realizada/', response={200: str})
 def aula_realizada(request, aula_realiza: AulaRealizadaSchema):
     qtd = aula_realiza.dict()['qtd']
     email_aluno = aula_realiza.dict()['email_aluno']
